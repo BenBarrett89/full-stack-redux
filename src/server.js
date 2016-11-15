@@ -11,5 +11,6 @@ export default function startServer (store) {
   // when someone connects, send them the state
   io.on('connection', (socket) => {
     socket.emit('state', store.getState().toJS())
+    socket.on('action', store.dispatch.bind(store)) // security concern
   })
 }
