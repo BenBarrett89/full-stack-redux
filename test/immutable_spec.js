@@ -3,9 +3,8 @@ import {describe, it} from 'mocha'
 import {List, Map} from 'immutable'
 
 describe('immutability', () => {
-
   describe('a number', () => {
-    function increment(currentState) {
+    function increment (currentState) {
       return currentState + 1
     }
 
@@ -16,12 +15,10 @@ describe('immutability', () => {
       expect(nextState).to.equal(43)
       expect(state).to.equal(42)
     })
-
   })
 
   describe('A List', () => {
-
-    function addMovie(currentState, movie) {
+    function addMovie (currentState, movie) {
       return currentState.push(movie)
     }
 
@@ -39,12 +36,10 @@ describe('immutability', () => {
         '28 Days Later'
       ))
     })
-
   })
 
   describe('a tree', () => {
-
-    function addMovie(currentState, movie) {
+    function addMovie (currentState, movie) {
       return currentState.update('movies', movies => movies.push(movie))
     }
 
@@ -68,7 +63,5 @@ describe('immutability', () => {
         )
       }))
     })
-
   })
-
 })
