@@ -19,7 +19,7 @@ In separate console windows, you will need to run the server and the client appl
 npm run start-server
 ```
 
-# Starting the Client Application
+## Starting the Client Application
 ```
 npm run serve-client
 ```
