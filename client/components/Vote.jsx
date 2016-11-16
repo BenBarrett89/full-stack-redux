@@ -1,10 +1,11 @@
 import React from 'react'
+import {List} from 'immutable'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 
 export default React.createClass({
   mixins: [PureRenderMixin],
   propTypes: {
-    pair: React.PropTypes.object,
+    pair: React.PropTypes.instanceOf(List),
     hasVoted: React.PropTypes.string,
     vote: React.PropTypes.func
   },
