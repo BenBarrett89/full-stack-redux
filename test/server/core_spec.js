@@ -2,7 +2,7 @@ import {expect} from 'chai'
 import {describe, it} from 'mocha'
 import {List, Map} from 'immutable'
 
-import {setEntries, next, vote} from '../src/core'
+import {setEntries, next, vote} from '../../server/core'
 
 describe('application logic', () => {
   describe('setEntries', () => {

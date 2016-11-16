@@ -2,7 +2,7 @@ import {expect} from 'chai'
 import {describe, it} from 'mocha'
 import {Map, fromJS} from 'immutable'
 
-import reducer from '../src/reducer'
+import reducer from '../../server/reducer'
 
 describe('reducer', () => {
   it('handles SET_ENTRIES', () => {

@@ -2,7 +2,7 @@ import {expect} from 'chai'
 import {describe, it} from 'mocha'
 import {Map, fromJS} from 'immutable'
 
-import makeStore from '../src/store'
+import makeStore from '../../server/store'
 
 describe('store', () => {
   it('is a Redux store configured with the correct reducer', () => {
