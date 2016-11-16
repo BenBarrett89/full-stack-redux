@@ -8,7 +8,7 @@ import {
   Simulate
 } from 'react-addons-test-utils'
 import {List} from 'immutable'
-import Voting from '../../../client/components/Voting'
+import {Voting} from '../../../client/components/Voting'
 
 describe('Voting', () => {
   it('renders a pair of buttons', () => {
