@@ -23,6 +23,13 @@
     "url": "https://github.com/BenBarrett89/full-stack-redux/issues"
   },
   "homepage": "https://github.com/BenBarrett89/full-stack-redux#readme",
+  "dependencies": {
+    "immutable": "^3.8.1",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "redux": "^3.6.0",
+    "socket.io": "^1.5.1"
+  },
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-core": "^6.18.2",
@@ -33,6 +40,7 @@
     "chai-immutable": "^1.6.0",
     "jsdom": "^9.8.3",
     "mocha": "^3.1.2",
+    "react-addons-test-utils": "^15.3.2",
     "react-hot-loader": "^3.0.0-beta.6",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
@@ -42,12 +50,5 @@
       "es2015",
       "react"
     ]
-  },
-  "dependencies": {
-    "immutable": "^3.8.1",
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2",
-    "redux": "^3.6.0",
-    "socket.io": "^1.5.1"
   }
 }
