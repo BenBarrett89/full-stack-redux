@@ -125,5 +125,15 @@ describe('application logic', () => {
         })
       }))
     })
+
+    it('doesn\'t update the tally when the voted entry is not in the pair', () => {
+      const state = Map({
+        pair: List.of('Trainspotting', '28 Days Later')
+      })
+      const nextState = vote(state, 'Slumdog Millionaire')
+      expect(nextState).to.equal(Map({
+        pair: List.of('Trainspotting', '28 Days Later')
+      }))
+    })
   })
 })
